@@ -1,7 +1,37 @@
-function e() {
+function b1() {
     var input = document.getElementById("t").value;
     var c_input ='"'+input+' : "+'+input;
     document.getElementById("t").value=c_input;
+    bb();
+}
+function b2() {
+    var input = document.getElementById("t").value;
+    var c_input ='console.log("'+input+' : "+'+input+');';
+    document.getElementById("t").value=c_input;
+    bb();
+}
+function b3() {
+    var input = document.getElementById("t").value;
+    var c_input ='System.out.println("'+input+' : "+'+input+');';
+    document.getElementById("t").value=c_input;
+    bb();
+}
+function b4() {
+    var input = document.getElementById("t").value;
+    var c_input ='echo "'+input+' : " . '+input+';';
+    document.getElementById("t").value=c_input;
+    bb();
+}
+function b5() {
+    var input = document.getElementById("t").value;
+    var c_input ='var_dump ("'+input+' : " . '+input+');';
+    document.getElementById("t").value=c_input;
+    bb();
+}
+
+
+function cc() {
+    document.getElementById("t").value="";
 }
 
 // document.getElementById("c").addEventListener('click', function() {
@@ -46,7 +76,7 @@ function bb(){
             "progressBar": false,
             "positionClass": "toast-top-right",
             "preventDuplicates": false,
-            "showDuration": "300",
+            "showDuration": "100",
             "hideDuration": "1000",
             "timeOut": "3000",
             "extendedTimeOut": "1000",
@@ -54,8 +84,8 @@ function bb(){
             "hideEasing": "linear",
             "showMethod": "fadeIn",
             "hideMethod": "fadeOut"
-        }
-        Command: toastr["info"]("", "保存しました");
+        };
+        Command: toastr["info"]("", "コピーしました");
         $('#linkButton').click(function() {
             toastr.success('click');
         });
@@ -70,7 +100,7 @@ function bb(){
             "progressBar": false,
             "positionClass": "toast-top-right",
             "preventDuplicates": false,
-            "showDuration": "300",
+            "showDuration": "100",
             "hideDuration": "1000",
             "timeOut": "3000",
             "extendedTimeOut": "1000",
@@ -78,7 +108,7 @@ function bb(){
             "hideEasing": "linear",
             "showMethod": "fadeIn",
             "hideMethod": "fadeOut"
-        }
+        };
         Command: toastr["info"]("", "このブラウザは非対応です");
         $('#linkButton').click(function() {
             toastr.success('click');
@@ -86,6 +116,3 @@ function bb(){
     }
 }
 
-function cc() {
-    document.getElementById("t").value="";
-}

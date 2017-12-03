@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Vdisp</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+<link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
-<div align="center" style="margin: 25% auto;">
-    <h1>デバッグツール in-> "in :"+ in</h1>
-<textarea style="font-size: 2em;width:359px;height: 50%;" id="t" autofocus placeholder="入力"></textarea>
+<div align="center" style="margin:70px auto 0 auto;">
+    <h1>プログラミング中に<br>
+        隣に居てほしい。。<br>
+        デバッグツール</h1>
+<textarea id="t" autofocus placeholder="変数名を入力したあと選択"></textarea>
 <p id="p"></p>
-<button id="b" style="width:100px;height: 50px; font-size: 2em;" onclick=e();>決定</button>
-    <button id ="c"  style="width:140px;height: 50px; font-size: 2em;" onclick="bb()">コピー</button>
-    <button id ="clearr"  style="width:140px;height: 50px; font-size: 2em;" onclick="cc()">消去</button>
 
+<button id="b1" class="b" onclick=b1();>in-> "in : "+ in</button><br>
+<button id="b2" class="b" onclick=b2();>in-> console.log( "in : "+ in);</button><br>
+<button id="b3" class="b" onclick=b3();>in-> System.out.println("in : "+ in);</button><br>
+<button id="b4" class="b" onclick=b4();>in-> echo "in : " .  in;</button><br>
+<button id="b5" class="b" onclick=b5();>in->  var_dump ("in : " .  in);</button><br>
+
+    <button id ="c" onclick="bb()">コピー</button>
+    <button id ="clearr" onclick="cc()">消去</button>
 </div>
 </body>
 </html>
